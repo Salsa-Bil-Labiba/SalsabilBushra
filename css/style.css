@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{ 
+    scroll-behavior: smooth; 
+}
+
+body{
+    background: #4FC2FF;
+}
+
+section h1, h4{
+    text-align: center;
+    color:#d4f0ff;
+}
+
+/* ------------------------------------- */
+/* -------------navbar start------------ */
+/* ------------------------------------- */
+.menu .navbar{
+    background: rgb(43, 145, 228) !important;
+}
+.menu .navbar ul li a{
+    font-size: 25px !important;
+    color: #fff !important;
+}
+/* ---------------------------------------- */
+/* --------------navbar end---------------- */
+/* --------------home start---------------- */
+/* ---------------------------------------- */
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #31b7ff;
+}
+.banner .contain{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 10vh;
+    background: #4FC2FF;
+}
+.contain #scene{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    height: 100%;
+}
+.contain #text{
+    position: absolute;
+    display: flex !important;
+    position: relative;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 14vw;
+    z-index: 100;
+    top: 29vh;
+    left: 20vw;
+}
+.contain #text span{
+    position: relative !important;
+    display: inline-block;
+    text-shadow: 1px 1px 0 #e1e1e1,
+    2px 2px 0 #e1e1e1,
+    3px 3px 0 #e1e1e1,
+    4px 4px 0 #e1e1e1,
+    5px 5px 0 #e1e1e1,
+    6px 6px 0 #e1e1e1,
+    7px 7px 0 #e1e1e1,
+    8px 8px 0 #e1e1e1,
+    25px 35px 0 rgba(0, 0, 0, 0.1);
+    
+}
+.layer #pics{
+    position: absolute;
+    display: flex !important;
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.layer img{
+    position: absolute;
+    top: 19vh !important;
+    left: 15vw !important;
+    width: 12vw;
+    height: 100%;
+    object-fit: contain;
+}
+.layer img:nth-child(8){
+    top: 27vh !important;
+    left: 67vw !important;
+}
+.layer img:nth-child(3){
+    top: -15vh !important;
+    left: 8vw !important;
+}
+.layer img:nth-child(4){
+    top: -33vh !important;
+    left: 57vw !important;
+}
+.layer img:nth-child(5){
+    top: -20vh !important;
+    left: 41vw !important;
+}
+.layer img:nth-child(6){
+    top: -27vh !important;
+    left: 24vw !important;
+}
+.layer img:nth-child(7){
+    top: 26vh !important;
+    left: 39vw !important;
+}
+.layer img:nth-child(2){
+    top: -15vh !important;
+    left: 80vw !important;
+}
+.zIndexAbove{
+    z-index: 101;
+}
+/* ------------------------------------ -- */
+/* --------------home end---------------- */
+/* -------------about start-------------- */
+/* ---------------------------------------*/
+.about img{
+    width: 75%;
+    border: 5px solid rgba(255, 255, 255, 0.692);
+
+}
+.about h2{
+    color: rgb(255, 255, 255);
+}
+.about h5{
+    color: rgb(203, 240, 255);
+}
+.about p{
+    color: rgb(169, 231, 255);
+    
+}
+
+/* -----------------------------------------------*/
+/* -------------------About End------------------ */
+/* -------------------Edu Start------------------ */
+/* ---------------------------------------------- */
+
+.edu h1{
+    display: block !important;
+    text-align: center;
+}
+.edu h5{
+    color: rgb(203, 240, 255);
+    text-align: center;
+}
+.edu2 {
+
+    display: flex;
+}
+.edu ul {
+    margin: 0;
+    margin-top: 100px;
+    list-style: none;
+    position: relative;
+    padding: 1px 100px;
+    color: #fff;
+    font-size: 13px;
+  }
+  .edu ul:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    border-left: 2px dashed #fff;
+  }
+  .edu ul li {
+    position: relative;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 14px;
+    border-radius: 6px;
+    width: 250px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+  }
+  .edu ul li:not(:first-child) {
+    margin-top: 60px;
+  }
+  .edu ul li > span {
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    left: -30px;
+    top: 0;
+    position: absolute;
+  }
+  .edu ul li > span:before, .three ul li > span:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    background: #86b7e7;
+    left: -5px;
+    top: 0;
+  }
+  .edu ul li span:after {
+    top: 100%;
+  }
+  .edu ul li > div {
+    margin-left: 10px;
+  }
+  .edu div .title, .three div .type {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .edu div .info {
+    font-weight: 300;
+  }
+  .edu div > div {
+    margin-top: 5px;
+  }
+  .edu span.number {
+    height: 100%;
+  }
+  .edu span.number span {
+    position: absolute;
+    font-size: 10px;
+    left: -35px;
+    font-weight: bold;
+  }
+  .edu span.number span:first-child {
+    top: 0;
+  }
+  .edu span.number span:last-child {
+    top: 100%;
+  }
+  /* ------------------------------------------ */
+  /* ------------------Edu End---------------- */
+  /* ----------------Skills start------------- */
+  /* ----------------------------------------- */
+  .progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(241, 247, 255);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 30px;
+}
+.progress{
+    height: 10px;
+    background: #0089d3;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 40px;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar{
+    background: #65c9ff;
+    border-radius: 0;
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar:before{
+    content: "";
+    width: 100%;
+    border-top: 10px double #ffffff;
+    border-right: 25px solid #0089d3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress .progress-value{
+    font-size: 18px;
+    font-weight: 700;
+    color: #0089d3;
+    position: absolute;
+    top: -32px;
+    right: -5px;
+}
+.progress.yellow .progress-bar:before{ border-top-color: #fff; }
+.progress.green .progress-bar:before{ border-top-color: #65c168; }
+.progress.blue .progress-bar:before{ border-top-color: #165692; }
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
+}
+/* ------------------------------------------------ */
+/* --------------------Skill ends------------------ */
+/* -------------------Hobbies Start---------------- */
+/* ------------------------------------------------ */
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+  /* ------------------------------------------------ */
+  /* -----------------Hobbies End ------------------- */
+  /* ----------------Footer Start-------------------- */
+  /* ------------------------------------------------ */
+
+   .footer ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+  }
+  
+  @media (min-width: 500px) {
+    .footer ul {
+      grid-auto-flow: column;
+    }
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  .footer a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  .footer li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .footer li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
+  
+  .footer div {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    background-color: #002a38;
+    line-height: 1.3;
+    /* font-family: Menlo, monospace; */
+  }
+
+  
+  @keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+  }
+
+@media(max-width:990px){
+    .layer img{
+        position: absolute;
+        top: 22vh !important;
+        left: 15vw !important;
+        width: 12vw;
+        height: 100%;
+        object-fit: contain;
+    }
+    .layer img:nth-child(8){
+        top: 27vh !important;
+        left: 53vw !important;
+    }
+    .layer img:nth-child(3){
+        top: -3vh !important;
+        left: 10vw !important;
+    }
+    .layer img:nth-child(4){
+        top: -15vh !important;
+        left: 75vw !important;
+    }
+    .layer img:nth-child(5){
+        top: -15vh !important;
+        left: 50vw !important;
+    }
+    .layer img:nth-child(6){
+        top: -10vh !important;
+        left: 30vw !important;
+    }
+    .layer img:nth-child(7){
+        top: 30vh !important;
+        left: 30vw !important;
+    }
+    .layer img:nth-child(2){
+        top: 20vh !important;
+        left: 75vw !important;
+    }
+}
+
+@media(max-width:650px){
+    .layer img{
+        display: none !important;
+    }
+}
